@@ -1,0 +1,6 @@
+CUANDO EL ATRIBUTO SEA IGUAL A nublado SIEMPRE SE JUEGA
+
+caluroso,alta,falso,si
+frio,normal,verdad,si
+templado,alta,verdad,si
+caluroso,normal,falso,si

@@ -1,0 +1,5 @@
+caluroso,alta,falso,no
+caluroso,alta,verdad,no
+templado,alta,falso,no
+frio,normal,falso,si
+templado,normal,verdad,si

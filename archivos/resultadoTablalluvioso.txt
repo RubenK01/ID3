@@ -1,0 +1,5 @@
+templado,alta,falso,si
+frio,normal,falso,si
+frio,normal,verdad,no
+templado,normal,falso,si
+templado,alta,verdad,no
