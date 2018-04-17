@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
 
 public class Main {
 
@@ -8,7 +9,7 @@ public class Main {
 		
 		String juego = "archivos/juego.txt",
 				atriutos = "archivos/AtributosJuego.txt",
-				resultados = "archivos/resultadoTabla";
+				resultados = "archivos/ResultadoTabla_";
 		
 		Utils utils = new Utils();
 		try {
@@ -64,8 +65,15 @@ public class Main {
 				}
 			}
 			
+			String keyMenorMerito = "" ;
+			for(Entry<String, HashMap<String, objID3>> atr : mapaGeneral.entrySet()) {
+				if(atr.getValue() == colMenorInfo) {
+					keyMenorMerito = atr.getKey();
+				}
+			}
+			
 			//imprimir al archivo
-			utils.imprimeResutados(colMenorInfo, juego, resultados);
+			utils.imprimeResutados(colMenorInfo, juego, resultados + keyMenorMerito + "_");
 
 
 		} catch (IOException e) {
